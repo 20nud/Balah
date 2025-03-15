@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-   background-color: #E65100; /* Orange */
+   background-color: #fff; /* white */
    color: #2C1178; /* Dark Blue */
 }
 
@@ -33,7 +33,7 @@ header p {
 }
 
 .product-card {
- background-color: #fff;
+ background-color: #E65100;
   border: 2px solid #2C1178;
   color: #2C1178;
   border-radius: 8px;
