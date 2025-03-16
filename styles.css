@@ -30,6 +30,11 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 4px solid #2C1178; /* Dark Blue Frame */
+  padding: 5px;
+
 }
 
 .product-card {
