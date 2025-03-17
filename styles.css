@@ -4,12 +4,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff; /* white */
-  color: #2C1178; /* Dark Blue */
+  color: #250c77; /* Dark Blue */
 }
 
 header {
-  background-color: #2C1178; /* Dark Blue */
-  color: #E65100; /* Orange */
+  background-color: #250c77; /* Dark Blue */
+  color: #ed642b; /* Orange */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,9 +39,9 @@ header {
 }
 
 .product-card {
-  background-color: #E65100;
-  border: 2px solid #2C1178;
-  color: #2C1178;
+  background-color: #ed642b;
+  border: 2px solid #250c77;
+  color: #250c77;
   border-radius: 8px;
   margin: 10px;
   width: 250px;
@@ -56,7 +56,7 @@ header {
 .product-card img {
   max-width: 100%;
   border-radius: 8px;
-  border: 4px solid #2C1178; /* Dark Blue Frame */
+  border: 4px solid #250c77; /* Dark Blue Frame */
   display: block;
   margin: 0;
   padding: 0;
@@ -69,18 +69,18 @@ header {
 
 .product-card p {
   font-size: 0.9rem;
-  color: #2C1178;
+  color: #250c77;
 }
 
 .price {
   font-weight: bold;
-  color: #2C1178;
+  color: #250c77;
   font-size: 1.1rem;
 }
 
 footer {
-  background-color: #2C1178;
-  color: #E65100;
+  background-color: #250c77;
+  color: #ed642b;
   text-align: center;
   padding: 10px 0;
   margin-top: 20px;
@@ -90,7 +90,7 @@ footer {
 }
 
 footer a {
-  color: #E65100;
+  color: #ed642b;
   text-decoration: none;
   font-weight: bold;
 }
