@@ -10,18 +10,23 @@ body {
 header {
   background-color: #2C1178; /* Dark Blue */
   color: #E65100; /* Orange */
-  text-align: center;
-  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.logo {
+  max-width: 120px;
+  height: auto;
+  margin-left: 20px;
 }
 
-header p {
-  margin: 5px 0 0;
-  font-size: 1.2rem;
+.site-title {
+  font-size: 1.5rem;
+  text-align: right;
+  margin-right: 20px;
+  font-family: 'Etlalah', sans-serif;
 }
 
 .products {
