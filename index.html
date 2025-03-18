@@ -14,16 +14,16 @@
     <nav class="navbar">
       <div class="nav-item">رجالي
         <ul class="dropdown">
-          <li>أحذية</li>
-          <li>ملابس الجزء العلوي</li>
-          <li>ملابس الجزء السفلي</li>
+          <li onclick="filterCategory('احذية')">أحذية</li>
+          <li onclick="filterCategory('ملابس الجزء العلوي')">ملابس الجزء العلوي</li>
+          <li onclick="filterCategory('ملابس الجزء السفلي')">ملابس الجزء السفلي</li>
         </ul>
       </div>
       <div class="nav-item">نسائي
         <ul class="dropdown">
-          <li>أحذية</li>
-          <li>ملابس الجزء العلوي</li>
-          <li>ملابس الجزء السفلي</li>
+          <li onclick="filterCategory('احذية')">أحذية</li>
+          <li onclick="filterCategory('ملابس الجزء العلوي')">ملابس الجزء العلوي</li>
+          <li onclick="filterCategory('ملابس الجزء السفلي')">ملابس الجزء السفلي</li>
         </ul>
       </div>
     </nav>
@@ -35,14 +35,14 @@
 
   <main>
     <section class="products" id="product-list">
-      <div class="product-card" data-name="حذاء بالانسياغا اسود">
+      <div class="product-card" data-name="حذاء بالانسياغا اسود" data-category="احذية">
         <img src="بالانسياغا اسود.webp" alt="حذاء بالانسياغا اسود">
         <h3>حذاء بالانسياغا</h3>
         <p>بالة نظيف قياس 43</p>
         <p class="price">20 IQD</p>
       </div>
 
-      <div class="product-card" data-name="حذاء بالانسياغا ابيض">
+      <div class="product-card" data-name="حذاء بالانسياغا ابيض" data-category="احذية">
         <img src="بالانسياغا ابيض.webp" alt="حذاء بالانسياغا ابيض">
         <h3>حذاء بالانسياغا</h3>
         <p>بالة نظيف قياس 42</p>
@@ -71,6 +71,17 @@
         }
       });
     });
+
+    function filterCategory(category) {
+      let products = document.querySelectorAll('.product-card');
+      products.forEach(product => {
+        if (product.getAttribute('data-category') === category) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
   </script>
 </body>
 </html>
