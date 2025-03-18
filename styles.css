@@ -1,7 +1,9 @@
 /* styles.css */
 @font-face {
-  font-family: 'Etlalah';
+   font-family: 'Etlalah';
   src: url('Etlalah-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
