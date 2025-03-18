@@ -9,30 +9,29 @@
 <body>
   <header>
     <img src="بالة شرقي لوغو 2.webp" alt="بالة شرقي" class="logo">
+    <div class="search-container">
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="ابحث عن المنتج...">
+      </div>
+      <nav class="navbar">
+        <div class="nav-item" tabindex="0">رجالي
+          <ul class="dropdown">
+            <li onclick="filterCategory('احذية')">أحذية</li>
+            <li onclick="filterCategory('ملابس الجزء العلوي')">ملابس الجزء العلوي</li>
+            <li onclick="filterCategory('ملابس الجزء السفلي')">ملابس الجزء السفلي</li>
+          </ul>
+        </div>
+        <div class="nav-item" tabindex="0">نسائي
+          <ul class="dropdown">
+            <li onclick="filterCategory('احذية')">أحذية</li>
+            <li onclick="filterCategory('ملابس الجزء العلوي')">ملابس الجزء العلوي</li>
+            <li onclick="filterCategory('ملابس الجزء السفلي')">ملابس الجزء السفلي</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <div class="site-title">بالة شرقي <br> اذا عراقي البس بالة</div>
   </header>
-
-  <div class="search-container">
-    <div class="search-bar">
-      <input type="text" id="search" placeholder="ابحث عن المنتج...">
-    </div>
-    <nav class="navbar">
-      <div class="nav-item" tabindex="0">رجالي
-        <ul class="dropdown">
-          <li onclick="filterCategory('احذية')">أحذية</li>
-          <li onclick="filterCategory('ملابس الجزء العلوي')">ملابس الجزء العلوي</li>
-          <li onclick="filterCategory('ملابس الجزء السفلي')">ملابس الجزء السفلي</li>
-        </ul>
-      </div>
-      <div class="nav-item" tabindex="0">نسائي
-        <ul class="dropdown">
-          <li onclick="filterCategory('احذية')">أحذية</li>
-          <li onclick="filterCategory('ملابس الجزء العلوي')">ملابس الجزء العلوي</li>
-          <li onclick="filterCategory('ملابس الجزء السفلي')">ملابس الجزء السفلي</li>
-        </ul>
-      </div>
-    </nav>
-  </div>
 
   <main>
     <section class="products" id="product-list">
