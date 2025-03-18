@@ -1,42 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Secondhand Style - Used Clothes & Shoes</title>
+  <title>بالة شرقي - ملابس وأحذية مستعملة</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <img src="بالة شرقي لوغو 2.webp" alt="بالة شرقي" class="logo">
     <div class="site-title">بالة شرقي <br> اذا عراقي البس بالة</div>
-</header>
+    
+    <nav class="navbar">
+      <div class="nav-item">رجالي
+        <ul class="dropdown">
+          <li>أحذية</li>
+          <li>ملابس الجزء العلوي</li>
+          <li>ملابس الجزء السفلي</li>
+        </ul>
+      </div>
+      <div class="nav-item">نسائي
+        <ul class="dropdown">
+          <li>أحذية</li>
+          <li>ملابس الجزء العلوي</li>
+          <li>ملابس الجزء السفلي</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="ابحث عن المنتج...">
+  </div>
 
   <main>
-    <section class="products">
-      <div class="product-card">
-        <img src="بالانسياغا اسود.webp" alt="Used Denim Jacket">
+    <section class="products" id="product-list">
+      <div class="product-card" data-name="حذاء بالانسياغا اسود">
+        <img src="بالانسياغا اسود.webp" alt="حذاء بالانسياغا اسود">
         <h3>حذاء بالانسياغا</h3>
         <p>بالة نظيف قياس 43</p>
         <p class="price">20 IQD</p>
       </div>
 
-      <div class="product-card">
-        <img src="بالانسياغا ابيض.webp" alt="Used White Sneakers">
+      <div class="product-card" data-name="حذاء بالانسياغا ابيض">
+        <img src="بالانسياغا ابيض.webp" alt="حذاء بالانسياغا ابيض">
         <h3>حذاء بالانسياغا</h3>
         <p>بالة نظيف قياس 42</p>
         <p class="price">15 IQD</p>
       </div>
-
-      <!-- Add more product cards here -->
     </section>
   </main>
 
   <footer>
     <p>تواصل معنا:</p>
-    <p>Phone: <a href="tel:+964 786 493 9068">+964 786 493 9068</a></p>
+    <p>Phone: <a href="tel:+9647864939068">+964 786 493 9068</a></p>
     <p>Follow us on <a href="https://www.instagram.com/east_balah/" target="_blank">Instagram</a></p>
   </footer>
+
+  <script>
+    document.getElementById('search').addEventListener('input', function () {
+      let searchValue = this.value.toLowerCase();
+      let products = document.querySelectorAll('.product-card');
+
+      products.forEach(product => {
+        let productName = product.getAttribute('data-name').toLowerCase();
+        if (productName.includes(searchValue)) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
