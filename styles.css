@@ -18,8 +18,7 @@ header {
   background-color: #250c77; /* Dark Blue */
   color: #ed642b; /* Orange */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
@@ -27,20 +26,36 @@ header {
 .logo {
   max-width: 120px;
   height: auto;
-  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .site-title {
   font-size: 2rem;
-  text-align: center;
+  text-align: right;
+  margin-right: 20px;
   font-family: 'Etlalah', sans-serif;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  width: 400px;
+  padding: 15px;
+  border: 2px solid #250c77;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .navbar {
   display: flex;
-  gap: 20px;
   justify-content: center;
-  margin-top: 10px;
+  gap: 50px;
+  margin-bottom: 20px;
 }
 
 .nav-item {
@@ -64,34 +79,22 @@ header {
   min-width: 150px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover .dropdown,
+.nav-item:focus-within .dropdown {
+  display: block;
 }
 
 .dropdown li {
   padding: 5px 10px;
   cursor: pointer;
+  transition: background 0.2s ease-in-out;
 }
 
 .dropdown li:hover {
   background-color: #250c77;
-}
-
-.nav-item:hover .dropdown {
-  display: block;
-}
-
-.search-bar {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.search-bar input {
-  width: 400px;
-  padding: 15px;
-  border: 2px solid #250c77;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  text-align: center;
 }
 
 .products {
